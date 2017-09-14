@@ -77,7 +77,7 @@ jQuery(document).ready(function($) {
         });
         if( ferror ) return false; 
         else var str = $(this).serialize();
-            ga('send', 'event', 'Form', 'requisition', str);	
+            ga('send', 'event', 'MyForm', 'requisition', str);	
             alert("Заявка успешно отправлена!");	
             window.location.href = window.location.href;
             //location.reload();

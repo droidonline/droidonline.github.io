@@ -78,7 +78,7 @@ jQuery(document).ready(function($) {
         if( ferror ) return false; 
         else var o = $(this);
             
-            ga('send', 'event', 'MyForm', o[0].subject, o[0].name + ' ' + o[0].email + ' '+ o[0].message);	
+            ga('send', 'event', 'MyForm', o[0].subject.value, o[0].name.value + ' ' + o[0].email.value + ' '+ o[0].message.value);	
             alert("Заявка успешно отправлена!");	
             window.location.href = window.location.href;
             //location.reload();
